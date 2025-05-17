@@ -13,6 +13,7 @@ public class Transferencias {
 
         if(saldoAtual >= valor){
             saldoAtual = saldoAtual - valor;
+            conta.setSaldoAtual(saldoAtual);
             System.out.println("O novo saldo é de: " + saldoAtual);
         }
         else{
@@ -28,6 +29,7 @@ public class Transferencias {
         double saldoAtual = conta.getSaldoConta();
 
         saldoAtual += valor;
+        conta.setSaldoAtual(saldoAtual);
         System.out.println("Seu saldo é de: " + saldoAtual);
     }
 }
